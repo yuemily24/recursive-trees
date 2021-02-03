@@ -20,42 +20,6 @@ Although this data is very different from filesystem data, it is still
 hierarchical. This means we are able to model it using a TMTree subclass,
 and we can then run it through our treemap visualisation tool to get a nice
 interactive graphical representation of this data.
-
-Recommended steps:
-1. Start by reviewing the provided dataset in cs1_papers.csv. You can assume
-   that any data used to generate this tree has this format,
-   i.e., a csv file with the same columns (same column names, same order).
-   The categories are all in one column, separated by colons (':').
-   However, you should not make assumptions about what the categories are, how
-   many categories there are, the maximum number of categories a paper can have,
-   or the number of lines in the file.
-
-2. Read through all the docstrings in this file once. There is a lot to take in,
-   so don't feel like you need to understand it all the first time.
-   Draw some pictures!
-   We have provided the headers of the initializer as well as of some helper
-   functions we suggest you implement. Note that we will not test any
-   private top-level functions, so you can choose not to implement these
-   functions, and you can add others if you want to for your solution.
-   For this task, we will be testing that you are building the correct tree,
-   not that you are doing it in a particular way. We will access your class
-   in the same way as in the client code in the visualizer.
-
-3. Plan out what you'll need to do to implement the PaperTree initializer.
-   In particular, think about how to use the boolean parameters to do different
-   things in setting up the tree. You may also find it helpful to review the
-   Python documentation about the csv module, which you are permitted and
-   encouraged to use. You should have a good plan, including what your subtasks
-   are, before you begin writing any code.
-
-4. Write the code for the PaperTree initializer and any helper functions you
-   want to use in your design. You should not make any changes to the public
-   interface of this module, or of the PaperTree class, but you can add private
-   attributes and helpers as needed.
-
-5. Tidy and test your code, and try it with the visualizer client code. Make
-   sure you have documented any new private attributes, and that PyTA passes
-   on your code.
 """
 import csv
 from typing import List, Dict
